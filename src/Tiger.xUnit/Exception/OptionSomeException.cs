@@ -9,7 +9,12 @@ namespace Xunit.Sdk
     /// is unexpectedly not in the Some state.
     /// </summary>
     [PublicAPI]
-    public class OptionSomeException
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    class OptionSomeException
         : AssertActualExpectedException
     {
         /// <summary>Initializes a new instance of the <see cref="OptionSomeException"/> class.</summary>

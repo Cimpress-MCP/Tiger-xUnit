@@ -9,7 +9,12 @@ namespace Xunit.Sdk
     /// is unexpectedly not in the None state.
     /// </summary>
     [PublicAPI]
-    public class OptionNoneException
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    class OptionNoneException
         : AssertActualExpectedException
     {
         /// <summary>Initializes a new instance of the <see cref="OptionNoneException"/> class.</summary>

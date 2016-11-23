@@ -9,7 +9,12 @@ namespace Xunit.Sdk
     /// is unexpectedly not in the OK state.
     /// </summary>
     [PublicAPI]
-    public class TryOkException
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    class TryOkException
         : AssertActualExpectedException
     {
         /// <summary>Initializes a new instance of the <see cref="TryOkException"/> class.</summary>

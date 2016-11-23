@@ -5,8 +5,12 @@ using Xunit.Sdk;
 // ReSharper disable once CheckNamespace
 namespace Xunit
 {
-    /// <summary>XUnit assertions specialized for <see cref="Result{TOk}"/>.</summary>
-    public partial class Assert
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    partial class Assert
     {
         /// <summary>Verifies that a given result is in the OK state.</summary>
         /// <typeparam name="TOk">The OK type.</typeparam>

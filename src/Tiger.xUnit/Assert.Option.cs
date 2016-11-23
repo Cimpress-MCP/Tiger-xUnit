@@ -5,9 +5,12 @@ using Xunit.Sdk;
 // ReSharper disable once CheckNamespace
 namespace Xunit
 {
-    /// <summary>XUnit assertions specialized for <see cref="Option{TSome}"/>.</summary>
-    [PublicAPI]
-    public partial class Assert
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    partial class Assert
     {
         /// <summary>Verifies that a given option is in the Some state.</summary>
         /// <typeparam name="TSome">The Some type.</typeparam>

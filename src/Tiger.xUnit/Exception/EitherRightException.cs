@@ -9,7 +9,12 @@ namespace Xunit.Sdk
     /// is unexpectedly not in the Right state.
     /// </summary>
     [PublicAPI]
-    public class EitherRightException
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    class EitherRightException
         : AssertActualExpectedException
     {
         /// <summary>Initializes a new instance of the <see cref="EitherRightException"/> class.</summary>

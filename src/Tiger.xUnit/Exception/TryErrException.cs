@@ -9,7 +9,12 @@ namespace Xunit.Sdk
     /// is unexpectedly not in the Err state.
     /// </summary>
     [PublicAPI]
-    public class TryErrException
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    class TryErrException
         : AssertActualExpectedException
     {
         /// <summary>Initializes a new instance of the <see cref="TryErrException"/> class.</summary>

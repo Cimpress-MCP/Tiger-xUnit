@@ -5,8 +5,12 @@ using Xunit.Sdk;
 // ReSharper disable once CheckNamespace
 namespace Xunit
 {
-    /// <summary>XUnit assertions specialized for <see cref="Either{TLeft,TRight}"/>.</summary>
-    public partial class Assert
+#if XUNIT_VISIBILITY_INTERNAL
+    internal
+#else
+    public
+#endif
+    partial class Assert
     {
         /// <summary>Verifies that a given either is in the Right state.</summary>
         /// <typeparam name="TLeft">The Left type.</typeparam>
