@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <developmentDependency>true</developmentDependency>
     <summary>A collection of xUnit.net assertions, tailored for Tiger libraries. (As source.)</summary>
-    <releaseNotes>Everything is new!</releaseNotes>
+    <releaseNotes><![CDATA[The `Tiger.xUnit.Source` package has been created, for further customization of assertions.]]></releaseNotes>
     <copyright>Copyright ©Cimpress 2016</copyright>
     <tags>xunit assert assertion option either result try</tags>
     <dependencies>

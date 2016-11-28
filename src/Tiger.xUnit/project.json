@@ -45,7 +45,7 @@
   },
 
   "packOptions": {
-    "releaseNotes": "Everything is new!",
+    "releaseNotes": "The `Tiger.xUnit.Source` package has been created, for further customization of assertions.",
     "owners": [ "cosborn@cimpress.com" ],
     "repository": {
       "type": "git",
