@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-*",
+  "version": "1.1.0-beta-*",
   "name": "Tiger.xUnit",
   "title": "Tiger xUnit.net Extensions",
   "description": "A collection of xUnit.net assertions, tailored for Tiger libraries.",
@@ -52,6 +52,7 @@
       "url": "https://mcpstash.cimpress.net/projects/FE/repos/xunit"
     },
     "requireLicenseAcceptance": false,
+    "developmentDependency": true,  
     "tags": [ "xunit", "assert", "assertion", "option", "either", "result", "try" ],
     "iconUrl": "https://mcpstash.cimpress.net/projects/FE/repos/xunit/browse/tiger_logo.png?raw"
   }

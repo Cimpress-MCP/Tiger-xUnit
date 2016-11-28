@@ -1,14 +1,11 @@
-﻿using JetBrains.Annotations;
-using Tiger.Types;
+﻿using Tiger.Types;
 
 // ReSharper disable once CheckNamespace
 namespace Xunit.Sdk
 {
     /// <summary>
-    /// Exception thrown when an <see cref="Option{TSome}"/>
-    /// is unexpectedly not in the None state.
+    /// Exception thrown when an <see cref="Option{TSome}"/> is unexpectedly not in the None state.
     /// </summary>
-    [PublicAPI]
 #if XUNIT_VISIBILITY_INTERNAL
     internal
 #else

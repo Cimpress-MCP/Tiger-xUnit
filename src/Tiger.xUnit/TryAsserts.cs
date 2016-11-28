@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using Tiger.ErrorTypes;
+﻿using Tiger.ErrorTypes;
 using Xunit.Sdk;
 
 // ReSharper disable once CheckNamespace
@@ -17,7 +16,6 @@ namespace Xunit
         /// <param name="result">The result.</param>
         /// <returns>The OK value of the result.</returns>
         /// <exception cref="TryOkException">The result is not in the OK state.</exception>
-        [NotNull]
         public static TOk Ok<TOk>(Try<TOk> result)
         {
             if (!result.IsOk)

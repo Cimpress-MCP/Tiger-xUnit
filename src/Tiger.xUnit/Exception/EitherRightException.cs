@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using Tiger.Types;
+﻿using Tiger.Types;
 
 // ReSharper disable once CheckNamespace
 namespace Xunit.Sdk
@@ -8,7 +7,6 @@ namespace Xunit.Sdk
     /// Exception thrown when an <see cref="Either{TLeft,TRight}"/>
     /// is unexpectedly not in the Right state.
     /// </summary>
-    [PublicAPI]
 #if XUNIT_VISIBILITY_INTERNAL
     internal
 #else

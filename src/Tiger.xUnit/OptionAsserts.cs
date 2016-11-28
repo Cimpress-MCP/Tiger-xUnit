@@ -1,5 +1,4 @@
-﻿using JetBrains.Annotations;
-using Tiger.Types;
+﻿using Tiger.Types;
 using Xunit.Sdk;
 
 // ReSharper disable once CheckNamespace
@@ -17,7 +16,6 @@ namespace Xunit
         /// <param name="option">The option.</param>
         /// <returns>The Some value of the option.</returns>
         /// <exception cref="OptionSomeException">The option is not in the Some state.</exception>
-        [NotNull]
         public static TSome Some<TSome>(Option<TSome> option)
         {
             if (!option.IsSome)

@@ -12,21 +12,34 @@ Tiger types are unfamiliar to unit testing frameworks, whose assertions typicall
 // arrange (omitted)
 
 // act
-var actual = sut.PerformAction(input); // returns Option<TSome>
+Option<TSome> actual = sut.PerformAction(input);
 
 // assert
-var innerValue = Assert.Some(actual);
+TSome innerValue = Assert.Some(actual);
 Assert.Equal(expected, innerValue);
 ```
 
 xUnit.net's `Assert.Single` method takes a collection, asserts that the collection contains only one element, and returns that element for further testing. Following this pattern: `Assert.Some` takes an option value, asserts that it is in the Some state, and returns the Some value for further testing. The assertions provided for a type are as follows:
 
-- `Option`: `TSome Assert.Some(Option<TSome>)`, `void Assert.None(Option<TSome>)`
-- `Either`: `TLeft Assert.Left(Either<TLeft, TRight>)`, `TRight Assert.Right(Either<TLeft, TRight>)`
-- `Result`: `Error Assert.Err(Result<TOk>)`, `TOk Assert.Ok(Result<TOk>)`
-- `Try`: `Error Assert.Err(Try<TOk>)`, `TOk Assert.Ok(Try<TOk>)`, `void Assert.None(Try<TOk>)`
+- `Option`: `TSome Assert.Some<TSome>(Option<TSome>)`, `void Assert.None<TSome>(Option<TSome>)`
+- `Either`: `TLeft Assert.Left<TLeft, TRight>(Either<TLeft, TRight>)`, `TRight Assert.Right<TLeft, TRight>(Either<TLeft, TRight>)`
+- `Result`: `Error Assert.Err<TOk>(Result<TOk>)`, `TOk Assert.Ok<TOk>(Result<TOk>)`
+- `Try`: `Error Assert.Err<TOk>(Try<TOk>)`, `TOk Assert.Ok<TOk>(Try<TOk>)`, `void Assert.None<TOk>(Try<TOk>)`
 
 Specific exceptions are thrown for each kind of assertion failure, typed to inform xUnit that the test result was a failure, rather than an error.
+
+## The Source Package
+
+xUnit.net allows custom assertions to be added to its `Assert` class by taking a dependency on the package `xunit.assert.source` rather than `xunit.assert`. (The typical package `xunit` is a metapackage delivering `xunit.core` and `xunit.assert`.) This is the functionality that this package leans on, and it would be less useful if adding the Tiger extensions took that away. If this is required functionality, depend on these packages:
+
+- `xunit.assert.source`
+- `Tiger.xUnit.Source`
+
+...and the Tiger extensions will be added in such a way that `Assert` can be further extended.
+
+<!--
+  Due to a limitation in the current version of NuGet, both packages must be added, despite `Tiger.xUnit.Source` taking `xunit.assert.source` as an explicit dependency. Sorry!
+-->
 
 ## How You Develop It
 

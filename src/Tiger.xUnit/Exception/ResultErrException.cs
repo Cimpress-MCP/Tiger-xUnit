@@ -1,14 +1,11 @@
-using JetBrains.Annotations;
 using Tiger.ErrorTypes;
 
 // ReSharper disable once CheckNamespace
 namespace Xunit.Sdk
 {
     /// <summary>
-    /// Exception thrown when a <see cref="Result{TOk}"/>
-    /// is unexpectedly not in the Err state.
+    /// Exception thrown when a <see cref="Result{TOk}"/> is unexpectedly not in the Err state.
     /// </summary>
-    [PublicAPI]
 #if XUNIT_VISIBILITY_INTERNAL
     internal
 #else
