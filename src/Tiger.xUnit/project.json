@@ -49,11 +49,11 @@
     "owners": [ "cosborn@cimpress.com" ],
     "repository": {
       "type": "git",
-      "url": "https://mcpstash.cimpress.net/projects/FE/repos/xunit"
+      "url": "https://mcpstash.cimpress.net/projects/TIGER/repos/xunit"
     },
     "requireLicenseAcceptance": false,
     "developmentDependency": true,  
     "tags": [ "xunit", "assert", "assertion", "option", "either", "result", "try" ],
-    "iconUrl": "https://mcpstash.cimpress.net/projects/FE/repos/xunit/browse/tiger_logo.png?raw"
+    "iconUrl": "https://mcpstash.cimpress.net/projects/TIGER/repos/xunit/browse/tiger_logo.png?raw"
   }
 }
