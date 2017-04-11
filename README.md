@@ -8,7 +8,7 @@ Tiger.xUnit is a library of useful assertions for the xUnit.net unit testing fra
 
 Tiger types are unfamiliar to unit testing frameworks, whose assertions typically work on straight-values. Many have variants, extensions, or modes of operation that work on collections, and it is on these that this library is modeled.
 
-```
+```csharp
 // arrange (omitted)
 
 // act
@@ -32,18 +32,23 @@ Specific exceptions are thrown for each kind of assertion failure, typed to info
 
 xUnit.net allows custom assertions to be added to its `Assert` class by taking a dependency on the package `xunit.assert.source` rather than `xunit.assert`. (The typical package `xunit` is a metapackage delivering `xunit.core` and `xunit.assert`.) This is the functionality that this package leans on, and it would be less useful if adding the Tiger extensions took that away. If this is required functionality, depend on these packages:
 
-- `xunit.assert.source`
 - `Tiger.xUnit.Source`
 
 ...and the Tiger extensions will be added in such a way that `Assert` can be further extended.
 
-<!--
-  Due to a limitation in the current version of NuGet, both packages must be added, despite `Tiger.xUnit.Source` taking `xunit.assert.source` as an explicit dependency. Sorry!
--->
-
 ## How You Develop It
 
-This project is using the standard [`dotnet`](https://dot.net) build tool.
+This project is using the standard [`dotnet`](https://dot.net) build tool. A brief primer:
+
+- Restore NuGet dependencies: `dotnet restore`
+- Build the entire solution: `dotnet build`
+- Run all unit tests: `dotnet test`
+- Pack for publishing: `dotnet pack -o "$(pwd)/artifacts"`
+
+The parameter `--configuration` (shortname `-c`) can be supplied to the `build`, `test`, and `pack` steps with the following meaningful values:
+
+- “Debug” (the default)
+- “Release”
 
 This repository is attempting to use the [GitFlow](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/) branching methodology. Results may be mixed, please be aware.
 
