@@ -17,7 +17,7 @@
     <AssemblyName>Tiger.xUnit</AssemblyName>
     <PackageId>Tiger.xUnit</PackageId>
     <PackageTags>xunit;assert;assertion;option;either;result;try</PackageTags>
-    <PackageReleaseNotes>TKTKTK</PackageReleaseNotes>
+    <PackageReleaseNotes>[⁃ Due to the release of the final version of the dotnet CLI, the imports for the Source package have been cleaned up.</PackageReleaseNotes>
     <PackageIconUrl>https://mcpstash.cimpress.net/projects/TIGER/repos/xunit/browse/tiger_logo.png?raw</PackageIconUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://mcpstash.cimpress.net/projects/TIGER/repos/xunit</RepositoryUrl>
