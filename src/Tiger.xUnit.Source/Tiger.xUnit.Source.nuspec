@@ -17,7 +17,7 @@
     <tags>xunit assert assertion option either try</tags>
     <dependencies>
       <group targetFramework=".NETStandard1.1">
-        <dependency id="Tiger.Types" version="5.0.0-preview1" exclude="Build,Analyzers" />
+        <dependency id="Tiger.Types" version="5.0.0" exclude="Build,Analyzers" />
         <dependency id="xunit.assert.source" version="2.3.1" include="ContentFiles" exclude="Build,Analyzers" />
       </group>
     </dependencies>

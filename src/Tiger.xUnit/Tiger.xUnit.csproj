@@ -34,7 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Tiger.Types" Version="5.0.0-preview1" />
+    <PackageReference Include="Tiger.Types" Version="5.0.0" />
     <PackageReference Include="xunit.assert.source" Version="2.3.1" />
 
     <!--<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="All" /> 
