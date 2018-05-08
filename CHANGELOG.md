@@ -1,3 +1,7 @@
+## What's new in 5.0.0 (Released 2018-05-08)
+
+* The project has been brought up to date with the latest changes in Tiger.Types.
+
 ### What's new in 1.2.0 (Released 2017-04-10)
 
 * Due to the release of the final version of the dotnet CLI, the imports for the Source package have been cleaned up.

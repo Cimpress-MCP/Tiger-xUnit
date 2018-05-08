@@ -1,9 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26114.2
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiger.xUnit", "src\Tiger.xUnit.csproj", "{0D78B404-8B43-4344-ABD9-6EAAC04F1674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiger.xUnit", "src\Tiger.xUnit\Tiger.xUnit.csproj", "{0D78B404-8B43-4344-ABD9-6EAAC04F1674}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tiger.xUnit.Source", "src\Tiger.xUnit.Source\Tiger.xUnit.Source.csproj", "{D0608EB7-A53F-4331-83A4-20ACB37D4EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +16,15 @@ Global
 		{0D78B404-8B43-4344-ABD9-6EAAC04F1674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D78B404-8B43-4344-ABD9-6EAAC04F1674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D78B404-8B43-4344-ABD9-6EAAC04F1674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0608EB7-A53F-4331-83A4-20ACB37D4EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0608EB7-A53F-4331-83A4-20ACB37D4EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0608EB7-A53F-4331-83A4-20ACB37D4EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0608EB7-A53F-4331-83A4-20ACB37D4EE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BEBB58F-8E4F-4AE7-AE73-BB3D9B285E89}
 	EndGlobalSection
 EndGlobal

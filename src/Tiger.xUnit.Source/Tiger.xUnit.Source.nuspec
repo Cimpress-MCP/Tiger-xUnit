@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata minClientVersion="3.3.0">
+    <id>Tiger.xUnit.Source</id>
+    <version>5.0.0</version>
+    <description>A collection of xUnit.net assertions, tailored for Tiger libraries. (As source.)</description>
+    <authors>cosborn@cimpress.com</authors>
+    <title>Tiger xUnit.net Extensions (Source)</title>
+    <owners>cosborn@cimpress.com</owners>
+    <projectUrl>https://github.com/Cimpress-MCP/Tiger-Types-xUnit.git</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Cimpress-MCP/Tiger-Types-xUnit/master/tiger_logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <developmentDependency>true</developmentDependency>
+    <summary>A collection of xUnit.net assertions, tailored for Tiger libraries. (As source.)</summary>
+    <releaseNotes><![CDATA[⁃ The project has been brought up to date with the latest changes in Tiger.Types.]]></releaseNotes>
+    <copyright>©Cimpress 2016–2018</copyright>
+    <tags>xunit assert assertion option either try</tags>
+    <dependencies>
+      <group targetFramework=".NETStandard1.1">
+        <dependency id="Tiger.Types" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="xunit.assert.source" version="2.3.1" include="ContentFiles" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="contentFiles\cs\netstandard1.1\Assert\**\*.cs" buildAction="Compile"/>
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="..\Tiger.xUnit\**\*.cs" target="contentFiles\cs\netstandard1.1\Assert\" exclude="..\Tiger.xUnit\obj\**\*.cs"/>
+  </files>
+</package>
