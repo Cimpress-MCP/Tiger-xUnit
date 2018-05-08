@@ -23,8 +23,7 @@ xUnit.net's `Assert.Single` method takes a collection, asserts that the collecti
 
 - `Option`: `TSome Assert.Some<TSome>(Option<TSome>)`, `void Assert.None<TSome>(Option<TSome>)`
 - `Either`: `TLeft Assert.Left<TLeft, TRight>(Either<TLeft, TRight>)`, `TRight Assert.Right<TLeft, TRight>(Either<TLeft, TRight>)`
-- `Result`: `Error Assert.Err<TOk>(Result<TOk>)`, `TOk Assert.Ok<TOk>(Result<TOk>)`
-- `Try`: `Error Assert.Err<TOk>(Try<TOk>)`, `TOk Assert.Ok<TOk>(Try<TOk>)`, `void Assert.None<TOk>(Try<TOk>)`
+- `Try`: `TErr Assert.Err<TErr, TOk>(Try<TErr, TOk>)`, `TOk Assert.Ok<TErr, TOk>(Try<TErr, TOk>)`, `void Assert.None<TErr, TOk>(Try<TErr, TOk>)`
 
 Specific exceptions are thrown for each kind of assertion failure, typed to inform xUnit that the test result was a failure, rather than an error.
 
@@ -42,8 +41,7 @@ This project is using the standard [`dotnet`](https://dot.net) build tool. A bri
 
 - Restore NuGet dependencies: `dotnet restore`
 - Build the entire solution: `dotnet build`
-- Run all unit tests: `dotnet test`
-- Pack for publishing: `dotnet pack -o "$(pwd)/artifacts"`
+- Pack for publishing: `dotnet pack -o "$(pwd)/dist"`
 
 The parameter `--configuration` (shortname `-c`) can be supplied to the `build`, `test`, and `pack` steps with the following meaningful values:
 

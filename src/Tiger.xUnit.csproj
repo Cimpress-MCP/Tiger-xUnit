@@ -16,7 +16,7 @@
     <CodeAnalysisRuleSet>../Tiger.ruleset</CodeAnalysisRuleSet>
     <AssemblyName>Tiger.xUnit</AssemblyName>
     <PackageId>Tiger.xUnit</PackageId>
-    <PackageTags>xunit;assert;assertion;option;either;result;try</PackageTags>
+    <PackageTags>xunit;assert;assertion;option;either;try</PackageTags>
     <PackageReleaseNotes><![CDATA[⁃ The project has been brought up to date with the latest changes in Tiger.Types.]]></PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/Cimpress-MCP</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/Cimpress-MCP/Tiger-Types-xUnit/master/tiger_logo.png</PackageIconUrl>
