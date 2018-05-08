@@ -18,7 +18,7 @@
     <dependencies>
       <group targetFramework=".NETStandard1.1">
         <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
-        <dependency id="Tiger.ErrorTypes" version="4.0.0" exclude="Build,Analyzers" />
+        <dependency id="Tiger.Types" version="4.0.0" exclude="Build,Analyzers" />
         <dependency id="xunit.assert.source" version="2.2.0" include="ContentFiles" />
       </group>
     </dependencies>
