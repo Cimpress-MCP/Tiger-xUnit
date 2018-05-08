@@ -13,7 +13,7 @@
     <DebugType>portable</DebugType>
     <PreserveCompilationContext>false</PreserveCompilationContext>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <CodeAnalysisRuleSet>../Tiger.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>../../Tiger.ruleset</CodeAnalysisRuleSet>
     <AssemblyName>Tiger.xUnit</AssemblyName>
     <PackageId>Tiger.xUnit</PackageId>
     <PackageTags>xunit;assert;assertion;option;either;try</PackageTags>
@@ -30,7 +30,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <AdditionalFiles Include="../stylecop.json" />
+    <AdditionalFiles Include="../../stylecop.json" />
   </ItemGroup>
 
   <ItemGroup>
